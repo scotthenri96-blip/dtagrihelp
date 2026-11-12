@@ -2,6 +2,9 @@ const express = require('express');
 const axios = require('axios');
 const app = express();
 app.use(express.json());
+app.get('/', (req, res) => {
+  res.send('DT AgriHelp Bot is Live - WhatsApp Farming Assistant');
+});
 const TOKEN = process.env.TOKEN;
 const PHONE_ID = "1490464360806788";
 const VERIFY_TOKEN = "adele123";
